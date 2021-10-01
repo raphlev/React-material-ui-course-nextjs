@@ -80,3 +80,4 @@ module.exports = config;```
 - update _document.js : replace html tag by Html tag 
 - move meta view port from _document.js into _app.js
 - fix Header.js > route.seleselectedIndex  --> route.selectedIndex
+- fix module nout found --> yarn add loadash
