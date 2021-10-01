@@ -1,19 +1,16 @@
 import React from "react";
-import Document, { Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/core/styles";
 import Theme from "../src/ui/Theme";
 
 export default class MyDocument extends Document {
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
           <link rel="shortcut icon" href="/favicon.png" />
-          <meta
-            name="viewport"
-            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-          />
+      
           {/* PWA primary color */}
           <meta name="theme-color" content={Theme.palette.primary.main} />
           <meta property="og:type" content="website" />
@@ -27,7 +24,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

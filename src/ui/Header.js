@@ -425,7 +425,7 @@ export default function Header(props) {
                       <Grid item>
                         <ListItem
                           divider
-                          key={`${route}${route.seleselectedIndex}`}
+                          key={`${route}${route.selectedIndex}`}
                           button
                           component={Link}
                           href={route.link}
